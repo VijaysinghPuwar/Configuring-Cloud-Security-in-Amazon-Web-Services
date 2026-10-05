@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200" role="img" aria-labelledby="t d">
+  <title id="t">EC2 Network Hardening</title>
+  <desc id="d">A cloud outline containing a shield, next to the project name.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1b2d"/>
+      <stop offset="1" stop-color="#16314f"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="200" rx="14" fill="url(#bg)"/>
+
+  <!-- subtle network grid -->
+  <g fill="none" stroke="#2b4a6f" stroke-width="1" opacity="0.55">
+    <path d="M640 40 L720 90 L820 60 L900 120 M720 90 L760 160 L880 150 M820 60 L880 150"/>
+  </g>
+  <g fill="#3d6a99">
+    <circle cx="640" cy="40" r="4"/><circle cx="720" cy="90" r="5"/><circle cx="820" cy="60" r="4"/>
+    <circle cx="900" cy="120" r="4"/><circle cx="760" cy="160" r="4"/><circle cx="880" cy="150" r="5"/>
+  </g>
+
+  <!-- cloud -->
+  <path d="M70 140 a34 34 0 0 1 4 -67.7 a46 46 0 0 1 86 -12 a36 36 0 0 1 52 30 a25 25 0 0 1 -2 49.7 z"
+        fill="none" stroke="#7fb3e6" stroke-width="5" stroke-linejoin="round"/>
+  <!-- shield -->
+  <path d="M141 62 l30 11 v22 c0 21 -13 35 -30 42 c-17 -7 -30 -21 -30 -42 v-22 z" fill="#f2a33a"/>
+  <path d="M128 99 l9 9 l18 -20" fill="none" stroke="#0f1b2d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="250" y="96" fill="#ffffff" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="700">EC2 Network Hardening</text>
+  <text x="252" y="134" fill="#b8cde3" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="19">Security Groups · Network ACLs · IMDSv2 · VPC Flow Logs · Terraform</text>
+</svg>
