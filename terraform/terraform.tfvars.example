@@ -1,0 +1,18 @@
+# Copy to terraform.tfvars and edit. terraform.tfvars is git-ignored.
+
+# Your current public IP as a /32. Find it with: curl -s https://checkip.amazonaws.com
+trusted_admin_cidr = "203.0.113.10/32"
+
+aws_region    = "us-east-1"
+project_name  = "ec2-net-hardening"
+instance_type = "t3.micro"
+
+# allow | deny_admin | deny_all  (see README "What I tested")
+nacl_icmp_mode = "allow"
+
+enable_detailed_monitoring = true
+cpu_alarm_threshold        = 70
+
+# Optional. AWS sends a confirmation email that must be accepted before
+# notifications are delivered.
+# alarm_email = "you@example.com"

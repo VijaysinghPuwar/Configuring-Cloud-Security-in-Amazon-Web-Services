@@ -1,0 +1,42 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Variable files can contain IPs, emails and other private values.
+# Only the example file is committed.
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+
+# Keys and credentials
+*.pem
+*.ppk
+*.key
+id_rsa*
+id_ed25519*
+.aws/
+credentials
+.env
+.env.*
+
+# Linting / scanning caches
+.tflint.d/
+.checkov*/
+results_*.sarif
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
